@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "pm",
+  "version": "${version}",
+
+  "name": "PortalHUN's Mod",
+  "description": "This is my first mod.",
+  "authors": [
+    "PortalHUN"
+  ],
+  "contact": {
+    "homepage": "https://portalhun.com",
+    "sources": "https://github.com/PortalHUN"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.portalhun.pm.PM"
+    ],
+    "client": [
+      "com.portalhun.pm.PMClient"
+    ]
+  },
+  "mixins": [
+    "pm.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
